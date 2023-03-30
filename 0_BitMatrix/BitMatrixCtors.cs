@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace _0_BitMatrix
 {
-    internal class BitMatrixCtors
+    internal partial class BitMatrix
     {
+        public BitMatrix(int numberOfRows, int numberOfColumns, params int[] bits)
+        {
+            NumberOfColumns = numberOfColumns;
+            NumberOfRows = numberOfRows;
+
+            if (bits is not null)
+            {
+
+            }
+            else
+            {
+
+            }
+
+
+        }
     }
 }
