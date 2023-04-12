@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 
-namespace _0_BitMatrix
+namespace BitMatrixNameSpace
 {
     // prostokątna macierz bitów o wymiarach m x n
     public partial class BitMatrix
