@@ -42,12 +42,10 @@ namespace BitMatrixNameSpace
 
         public static bool operator ==(BitMatrix m1, BitMatrix m2)
         {
-            if (ReferenceEquals(m1, m2))
+            if (ReferenceEquals(m1, null) && ReferenceEquals(m2, null))
                 return true;
-
-            else if (m1 == null || m2 == null)
+            else if (ReferenceEquals(m1, null) || ReferenceEquals(m2, null))
                 return false;
-
             else
                 return m1.Equals(m2);
         }
