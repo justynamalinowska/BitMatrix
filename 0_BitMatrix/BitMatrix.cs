@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace BitMatrixNameSpace
 {
     // prostokątna macierz bitów o wymiarach m x n
-    public partial class BitMatrix
+    public partial class BitMatrix : IEquatable<BitMatrix>
     {
         private BitArray data;
         public int NumberOfRows { get; }
@@ -28,5 +28,7 @@ namespace BitMatrixNameSpace
 
         public static int BoolToBit(bool boolValue) => boolValue ? 1 : 0;
         public static bool BitToBool(int bit) => bit != 0;
+
+        
     }
 }
