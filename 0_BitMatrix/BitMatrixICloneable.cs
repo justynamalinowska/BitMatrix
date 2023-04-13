@@ -16,9 +16,7 @@ namespace BitMatrixNameSpace
             for (int i = 0; i < NumberOfRows; i++)
             {
                 for (int j = 0; j < NumberOfColumns; j++)
-                {
                     clonedMatrix[i, j] = this[i, j];
-                }
             }
             return clonedMatrix;
         }
