@@ -16,7 +16,7 @@ namespace BitMatrixNameSpace
             for (int i = 0; i < NumberOfRows; i++)
             {
                 for (int j = 0; j < NumberOfColumns; j++)
-                    sb.Append(BoolToBit(data[i * j]));
+                    sb.Append(BoolToBit(data[i * NumberOfColumns + j]));
                 sb.AppendLine();
             }
             return sb.ToString();
