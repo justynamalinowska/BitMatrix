@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace BitMatrixNameSpace
 {
     // prostokątna macierz bitów o wymiarach m x n
-    public partial class BitMatrix : IEquatable<BitMatrix>
+    public partial class BitMatrix
     {
         private BitArray data;
         public int NumberOfRows { get; }
