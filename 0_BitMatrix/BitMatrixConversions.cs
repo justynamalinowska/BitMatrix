@@ -118,18 +118,16 @@ namespace BitMatrixNameSpace
 
             BitArray bits = new BitArray(rows * columns);
 
-            for (int i = 0, k=0; i < rows; i++)
+            for (int i = 0; i < rows; i++)
             {
-                for (int j = 0; j < columns; j++, k++)
+                for (int j = 0; j < columns; j++)
                 {
                     if (matrix[i, j] == 1)
                         bits.Set(i * matrix.NumberOfColumns + j, true);
                     else
                         bits.Set(i * matrix.NumberOfColumns + j, false);
                 } 
-                
             }
-
             return bits;
         }
     }
